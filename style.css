@@ -1,0 +1,77 @@
+/* Containers */
+/* Borders */
+main, #global-header {
+  border: 3px solid red;
+}
+
+header, section, footer { 
+  border: 2px solid green;
+}
+
+div, span, nav {
+  border: 2px solid green;
+}
+
+/* Top level */
+body {
+  margin: 0px;
+}
+
+#global-header {
+  position: fixed;
+}
+
+main {
+  position: absolute;
+  top: 25vh;
+}
+
+/* #global-footer {
+  
+} */
+
+#home-background {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+/* nav */
+
+/* Text */
+/* Headings */
+h1 {
+  font-family: 'Cascadia Code Light', 'Courier New', Courier, monospace;
+}
+
+#global-header h1 {
+  font-size: small;
+}
+
+.blog-card h1 {
+  font-size: medium;
+}
+
+.page header h1 {
+  font-size: x-large;
+}
+
+/* Subtitles */
+
+/* Headings */
+h2 {
+  font-family: 'Cascadia Code Light', 'Courier New', Courier, monospace;
+}
+
+h3 {
+  font-family: 'Cascadia Code', 'Courier New', Courier, monospace;
+}
+
+h4 {
+  font-family: 'Cascadia Code Semibold', 'Courier New', Courier, monospace;
+}
+
+/* Paragraph */
+
+/* Interactive */

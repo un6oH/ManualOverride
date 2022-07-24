@@ -4,87 +4,69 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
     <title>Manual Override</title>
 
     <!-- <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script> -->
+    
   </head>
   <body> 
     <canvas id="home-background"></canvas>
-
+    
     <header id="global-header">
-      <span class="global-header-mark-container">
-        <h1 class="header-title">Manual Override</h1>
-      </span>
+      <h1 class="header-title">Manual Override</h1>
+
       <nav id="global-header-nav">
-        <button>Home</button>
-        <button>About</button>
-        <button>Blog</button>
-        <button>Projects</button>
-        <button>Instagram</button>
-        <button>GitHub</button>
-        <button>Follow</button>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about/">About</a>
+        <a class="nav-link" href="blog/">Blog</a>
+        <a class="nav-link" href="projects/">Projects</a>
+        <nav>
+          <a class="nav-icon"><img class="icon-button" src="assets/icons/instagram-icon-light.png" alt="Insta"></a>
+          <a class="nav-icon"><img class="icon-button" src="assets/icons/GitHub-Mark-Light-64px.png" alt="GitHub"></a>
+          <a class="nav-icon"><img class="icon-button" src="assets/icons/subscription-light.png" alt="Subscribe"></a>
+        </nav>
       </nav>
     </header>
 
-    <main id="home-main">
-      <header class="page-header">
-        <div class="page-heading-container">
-          <h1 class="page-heading">Manual Override</h1>
-        </div>
-        <div class="page-subtitle-container">
-          <h2 class="page-subtitle">Words and works of a lifelong learner</h2>
-        </div>
-        <div class="page-description-container">
-          <p class="page-description">My name Jeff</p>
-        </div>
+    <main>
+      <header id="page-header">
+        <h1>Manual Override</h1>
+        <p>Words and works of a lifelong learner</p>
         <nav>
-          <button>About</button>
-          <button>Blogs</button>
-          <button>Projects</button>
+          <a class="nav-link">About</a>
+          <a class="nav-link">Blogs</a>
+          <a class="nav-link">Projects</a>
         </nav>
       </header>
 
-      <section class="gallery" id="home-blog-section">
-        <div class="section-header-container">
-          <h2 class="section-header">Latest Blogs</h2>
-        </div>
-        <div class="section-button-container">
-          <button>Blog Home</button>
-        </div>
+      <section class="gallery-section" id="home-blog-section">
+        <h1 class="section-h1">Latest Blogs</h1>
+        <a class="nav-link">Blog Home</a>
         <ul class="blog-gallery" id="home-blog-gallery">
-          <li><div class="blog-card">
-            <h1 class="blog-card-title">Blog 1 title</h1>
-            <p class="blog-card-excerpt">Blog 1 excerpt</p>
-          </div></li>
-          <li><div class="blog-card">
-            <h1 class="blog-card-title">Blog 2 title</h1>
-            <p class="blog-card-excerpt">Blog 2 excerpt</p>
-          </div></li>
+          <li><div class="blog-card"></div></li>
+          <li><div class="blog-card"></div></li>
         </ul>
       </section>
 
       <section class="gallery" id="home-projects-section">
-        <div class="section-header-container">
-          <h2 class="section-header">Featured Project</h2>
-        </div>
-        <div class="section-button-container">
-          <button>Projects home</button>
-        </div>
-        <div class="project-card" id="home-projects-featured">
-          <h1 class="project-card-title">Project title</h1>
-          <p class="project-card-description">Project description</p>
-        </div>
+        <h1 class="section-h1">Featured Project</h1>
+        <a class="nav-link">Projects home</a>
+        <div class="project-card" id="home-projects-featured"></div>
       </section>
-
-      <footer id="global-footer">
-        <div id="footer-signature-container">
-          <img src="assets/signature.png" width="50px" />
-        </div>
-      </footer>
     </main>
-
+    
+    <footer id="global-footer"></footer>
   </body>
   <script src="index.js"></script>
   <script type="module" src="background-temp.js"></script>

@@ -26,8 +26,8 @@ function main() {
     return cube;
   }
   // background plane
-  const background = createObject(new THREE.PlaneGeometry(25, 25), 0xffffff);
-  background.position.z = -1;
+  // const background = createObject(new THREE.PlaneGeometry(25, 25), 0xffffff);
+  // background.position.z = -1;
 
   const heartShape = new THREE.Shape();
   
@@ -59,7 +59,8 @@ function main() {
   function resizeRenderer(renderer, width, height) {
     const canvas = renderer.domElement;
     if (canvas.width !== width || canvas.height !== height) {
-      columns = Math.floor((width - 100) / 100);
+      columns = Math.floor(width / 200);
+      if (columns == 0) columns = 1;
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
       camera.updateProjectionMatrix();

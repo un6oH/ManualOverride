@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <title>Manual Override</title>
+
+    <!-- <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script> -->
+    
+  </head>
+  <body> 
+    <canvas id="home-background"></canvas>
+    
+    <nav id="global-navbar">
+      <h1 class="header-title">Manual Override</h1>
+
+      <nav id="all-links">
+        <a class="nav-link" href=".\">Home</a>
+        <a class="nav-link" href="about/">About</a>
+        <a class="nav-link" href="blog/">Blog</a>
+        <a class="nav-link" href="projects/">Projects</a>
+        <nav id="icon-links">
+          <a class="nav-icon" href="https://www.instagram.com/un6oy"><img class="icon-button" src="assets/icons/instagram-icon-light.png" alt="Insta"></a>
+          <a class="nav-icon" href="https://github.com/un6oH"><img class="icon-button" src="assets/icons/GitHub-Mark-Light-64px.png" alt="GitHub"></a>
+          <a class="nav-icon"><img class="icon-button" src="assets/icons/subscription-light.png" alt="Subscribe"></a>
+        </nav>
+      </nav>
+    </nav>
+
+    <main>
+      <header id="page-header">
+        <h1>Manual Override</h1>
+        <p>Words and works of a lifelong learner</p>
+        <nav>
+          <a class="nav-link">About</a>
+          <a class="nav-link">Blogs</a>
+          <a class="nav-link">Projects</a>
+        </nav>
+      </header>
+
+      <section class="gallery-section" id="home-blog-section">
+        <h1 class="section-h1">Latest Blogs</h1>
+        <a class="nav-link">Blog Home</a>
+        <ul class="blog-gallery" id="home-blog-gallery">
+          <li><div class="blog-card"></div></li>
+          <li><div class="blog-card"></div></li>
+        </ul>
+      </section>
+
+      <section class="gallery" id="home-projects-section">
+        <h1 class="section-h1">Featured Project</h1>
+        <a class="nav-link">Projects home</a>
+        <div class="project-card" id="home-projects-featured"></div>
+      </section>
+    </main>
+    
+    <footer id="global-footer"></footer>
+  </body>
+  <script src="index.js"></script>
+  <script type="module" src="background-temp.js"></script>
+</html>

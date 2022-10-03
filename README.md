@@ -1,3 +1,6 @@
-# Manual-Override
+# Manual Override
 
-Repository for my personal website, which hosts my blogs and projects. A learning experience and experiment in progress. Big changes may occur frequently.
+Words and works of a lifelong learner.
+
+The repository for my personal website, where I host my blogs and projects. 
+Built using ASP.NET Blazor.
